@@ -1,6 +1,14 @@
-.search{
-  width: 350px;
-}
 body{
-	background: grey;
+	background: black;
+}
+a{
+	color: white;
+}
+.navbar{
+	background: black;
+	color: white; 
+}
+.jumbotron{
+	color: white;
+	background: url(../images/Ninja-jumbo.jpg)
 }
