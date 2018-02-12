@@ -1,8 +1,18 @@
+html{
+	height: 120%;
+}
 body{
 	background: black;
 }
 a{
 	color: white;
+}
+.col{
+	margin-top: 20px;
+}
+#search-bar{
+  height: 30px;
+  width: 250px;
 }
 .navbar{
 	background: black;
@@ -11,4 +21,34 @@ a{
 .jumbotron{
 	color: white;
 	background: url(../images/Ninja-jumbo.jpg)
+}
+#shoes-card{
+  margin-top: 34px;
+}
+#claw-card{
+  margin-top: 8px;
+}
+
+@media all and (max-width: 499px){
+	#email{
+	  width: 350px;
+	}
+	#title{
+	  width: 350px;
+	}
+	#message-box{
+		width: 350px;
+	}
+}
+
+@media all and (min-width: 500px){
+	#email{
+	  width: 500px;
+	}
+	#title{
+	  width: 500px;
+	}
+	#message-box{
+		width: 500px;
+	}
 }
