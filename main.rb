@@ -22,4 +22,6 @@ post '/contact' do
               :from => params[:email],
               :subject => params[:title],
               :body =>  params[:email] +" wrote:\n" + params[:message]
+  @thank_you_message = "Thanks for your email!"
+  erb :contact
 end
