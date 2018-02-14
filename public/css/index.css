@@ -10,6 +10,12 @@ a{
 label{
 	color: white;
 }
+.modal-open{
+  color: white;
+}
+.modal-content{
+  background-color: #363b3e;
+}
 .col{
 	margin-top: 20px;
 }
