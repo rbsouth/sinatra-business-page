@@ -7,6 +7,9 @@ body{
 a{
 	color: white;
 }
+label{
+	color: white;
+}
 .col{
 	margin-top: 20px;
 }
@@ -18,15 +21,56 @@ a{
 	background: black;
 	color: white; 
 }
-.jumbotron{
+#jumbo-home{
 	color: white;
-	background: url(../images/Ninja-jumbo.jpg)
+	background: url(../images/Ninja-jumbo.jpg);
+}
+#jumbo-home-2{
+	margin-top: 50px;
+	background: white;
 }
 #shoes-card{
   margin-top: 34px;
 }
 #claw-card{
   margin-top: 8px;
+}
+#image-link{
+	height: 200px;
+	width: 200px;
+}
+.writing-ninja{
+	height: 200px;
+	width: 200px;
+	opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.overlay-link {
+  position: relative;
+  top: -200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d60100;
+}
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-link:hover {
+	opacity: 1;
 }
 
 @media all and (max-width: 499px){
@@ -51,4 +95,133 @@ a{
 	#message-box{
 		width: 500px;
 	}
+}
+#contact-header{
+	color: #6c757d;
+}
+#thank-you-message{
+	color: white;
+}
+.blog-post{
+	margin: 75px;
+	height: 500px;
+}
+.card-text{
+	line-height: 50px;
+}
+.footer {
+  padding: 1rem;
+  background-color: #efefef;
+  margin-top: 50px;
+}
+#social-media 
+{
+  position:relative;
+  top:100px;
+  top:25vh;
+  font-size:1rem;
+  text-align:center;
+  height:250px;
+  overflow:hidden;
+}
+
+.btn 
+{
+  clear:both;
+  white-space:nowrap;
+  font-size:.8em;
+  display:inline-block;
+  border-radius:5px;
+  margin:2px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden
+}
+.btn > span,.btn-icon > i 
+{
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn > span 
+{
+  padding:14px 18px 16px;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn:hover > span 
+{
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
+  color:#212121;
+}
+
+.btn:focus > span 
+{
+  background:#9a9a9a
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn-icon > i 
+{
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after 
+{
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i 
+{
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
+  color:#FFF
+}
+
+.btn-icon > span 
+{
+  border-radius:0 5px 5px 0
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,.btn-facebook:focus > i 
+{
+  color:#3b5998
+}
+
+.btn-facebook > span {
+  background:#3b5998
+}
+
+/*Google Plus*/
+.btn-google:hover > i,.btn-google:focus > i 
+{
+  color:#d34836
+}
+
+.btn-google > span {
+  background:#d34836
+}
+
+/*Twitter*/
+.btn-twitter:hover > i,.btn-twitter:focus > i 
+{
+  color:#00aced
 }
