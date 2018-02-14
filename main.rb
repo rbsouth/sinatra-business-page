@@ -19,6 +19,8 @@ get '/contact' do
 end
 
 post '/contact' do
+	puts "THE PARAMS"
+	 p params
 	  Pony.mail :to => 'rbsouth@gmail.com',
               :from => params[:email],
               :subject => params[:title],
@@ -29,8 +31,4 @@ end
 get '/ajax-json' do
 	#controller logic
 	[{name: 'Reid'}, {name: 'Reid'}, {name: 'Reid'}].to_json
-end
-
-get '/contact' do
-	erb :thank_you, :layout => false
 end
