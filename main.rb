@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'pony'
+require 'json'
 
 get '/' do
 	erb :home	
@@ -22,6 +23,14 @@ post '/contact' do
               :from => params[:email],
               :subject => params[:title],
               :body =>  params[:email] +" wrote:\n" + params[:message]
-  @thank_you_message = "Thanks for your email!"
-  erb :contact
+  erb :thank_you, :layout => false
+end
+
+get '/ajax-json' do
+	#controller logic
+	[{name: 'Reid'}, {name: 'Reid'}, {name: 'Reid'}].to_json
+end
+
+get '/contact' do
+	erb :thank_you, :layout => false
 end
